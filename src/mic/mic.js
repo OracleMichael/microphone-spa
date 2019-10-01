@@ -47,8 +47,10 @@ export default class Mic extends Component {
           strokeColor="#000000"
           backgroundColor="#FFFFFF" /><br />
         <audio controls src={this.state.blob}></audio><br /><br />
-        <button onClick={this.startRecording} className="btn"><IoIosMic className="btn-svg"></IoIosMic></button>
-        <button onClick={this.stopRecording} className="btn"><IoIosSquare className="btn-svg"></IoIosSquare></button>
+        <div className="btn-cntr">
+        <button onClick={this.startRecording} className="btn"><IoIosMic className="btn-st-svg"></IoIosMic></button>
+        <button onClick={this.stopRecording} className="btn"><IoIosSquare className="btn-end-svg"></IoIosSquare></button>
+        </div>
       </div>
     );
   }
